@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="home">
+        <item>布局</item>
+        <item>硬件</item>
+        <item>UI控件</item>
+    </array>
+
+    <array name="layout">
+        <item>ConstraintLayout（约束布局）</item>
+        <item>FlexLayout</item>
+    </array>
+
+    <array name="hardware">
+        <item>蓝牙</item>
+    </array>
+
+    <array name="uicontrol">
+        <item>方框验证码</item>
+    </array>
+</resources>
