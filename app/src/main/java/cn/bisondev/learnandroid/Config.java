@@ -10,13 +10,22 @@ public class Config {
      * 首页RecyclerView
      */
     public static final int LAYOUT = 0;
-    public static final int HARDWARE = 1;
-    public static final int CONTROL = 2;
+    public static final int ACTIVITY = 1;
+    public static final int HARDWARE = 2;
+    public static final int CONTROL = 3;
 
     /**
      * 布局RecyclerView
      */
     public static final int CONSTRAINTACTIVITY = 0;
+
+    /**
+     * Activity界面的RecyclerView
+     */
+    public static final int LISTACTIVITY = 0;
+    public static final int LAUNCHERACTIVITY = 1;
+    public static final int EXPANDABLELISTACTIVITY = 2;
+    public static final int PREFERENCEACTICITY = 3;
 
     /**
      * 硬件RecyclerView

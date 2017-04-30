@@ -5,6 +5,7 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
+        android:name=".MyApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -18,11 +19,34 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <service
+            android:name=".MyService"
+            android:exported="true" />
+
+        <provider
+            android:name=".MyContentProvider"
+            android:authorities="cn.bisondev.learnandroid.MyContentProvider"
+            android:exported="true" />
+
+        <receiver android:name=".MyBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
         <activity android:name=".learnlayout.LayoutActivity" />
         <activity android:name=".learnlayout.ConstraintActivity" />
         <activity android:name=".leranhardware.HardActivity" />
         <activity android:name=".learncontrol.ControlActivity" />
-        <activity android:name=".learncontrol.securitycode.SecurityCodeActivity"></activity>
+        <activity android:name=".learncontrol.securitycode.SecurityCodeActivity" />
+        <activity android:name=".learnretrofit.RetrofitActivity" />
+        <activity android:name=".learnactivity.TestList" />
+        <activity android:name=".learnactivity.ActListActivity" />
+        <activity android:name=".learnactivity.TestLauncher" />
+        <activity android:name=".learnactivity.ExpandableListActivityTest" />
+        <activity android:name=".learnactivity.PreferenceActivityTest"
+            android:label="设置程序的参数" />
     </application>
 
 </manifest>
