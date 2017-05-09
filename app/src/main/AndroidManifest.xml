@@ -3,6 +3,8 @@
     package="cn.bisondev.learnandroid">
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:name=".MyApplication"
@@ -45,8 +47,15 @@
         <activity android:name=".learnactivity.ActListActivity" />
         <activity android:name=".learnactivity.TestLauncher" />
         <activity android:name=".learnactivity.ExpandableListActivityTest" />
-        <activity android:name=".learnactivity.PreferenceActivityTest"
+        <activity
+            android:name=".learnactivity.PreferenceActivityTest"
             android:label="设置程序的参数" />
+        <activity android:name=".learnsystem.SystemActivity" />
+        <activity
+            android:name=".learnsystem.sms.SMSActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".learnnetwork.NetworkActivity" />
+        <activity android:name=".learnnetwork.jsoup.TestJsoupActivity"></activity>
     </application>
 
 </manifest>

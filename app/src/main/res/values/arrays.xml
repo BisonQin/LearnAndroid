@@ -5,6 +5,8 @@
         <item>Activity</item>
         <item>硬件</item>
         <item>UI控件</item>
+        <item>系统服务</item>
+        <item>网络</item>
     </array>
 
     <array name="layout">
@@ -25,6 +27,14 @@
 
     <array name="uicontrol">
         <item>方框验证码</item>
+    </array>
+
+    <array name="system_service">
+        <item>短信</item>
+    </array>
+
+    <array name="network">
+        <item>测试Jsoup</item>
     </array>
 
     <string-array name="gender_name_list">

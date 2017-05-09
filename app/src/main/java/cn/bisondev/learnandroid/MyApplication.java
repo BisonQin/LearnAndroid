@@ -18,12 +18,12 @@ public class MyApplication extends Application {
     @Override
     protected void attachBaseContext(Context base) {
         super.attachBaseContext(base);
-        Log.e(TAG, LogUtils.logThis());
+        Log.d(TAG, LogUtils.logThis());
     }
 
     @Override
     public void onCreate() {
         super.onCreate();
-        Log.e(TAG, LogUtils.logThis());
+        Log.d(TAG, LogUtils.logThis());
     }
 }

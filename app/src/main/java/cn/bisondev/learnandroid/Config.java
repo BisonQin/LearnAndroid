@@ -13,6 +13,8 @@ public class Config {
     public static final int ACTIVITY = 1;
     public static final int HARDWARE = 2;
     public static final int CONTROL = 3;
+    public static final int SYSTEM_SERVICE = 4;
+    public static final int NETWORK = 5;
 
     /**
      * 布局RecyclerView
@@ -33,8 +35,18 @@ public class Config {
     public static final int BLUETOOTH = 0;
 
     /**
-     * UI空间的RecyclerView
+     * UI控件的RecyclerView
      */
     public static final int SECURITYCODE_EDITTEXT = 0;
+
+    /**
+     * 系统服务的RecyclerView
+     */
+    public static final int SMS = 0;
+
+    /**
+     * 网络的RecyclerView
+     */
+    public static final int TEST_JSOUP = 0;
 
 }

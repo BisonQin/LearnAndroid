@@ -98,7 +98,7 @@ public abstract class BaseRecyclerViewActivity extends AppCompatActivity {
             public void onSwiped(RecyclerView.ViewHolder viewHolder, int direction) {
                 final int position = viewHolder.getAdapterPosition();
 
-                mAdapter.removeItem(position, new RemoveItemCallback() {
+                mAdapter.removeItem(position, new RemoveItemCallback<String>() {
                     @Override
                     public void onSuccess(final String string) {
                         SnackbarUtil.ShortSnackbar(recyclerView,

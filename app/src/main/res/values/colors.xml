@@ -6,6 +6,7 @@
 
     <color name="colorPrimaryLight">#B3E5FC</color>
     <color name="text">#FFFFFF</color>
+    <color name="hintText">#acaaaa</color>
     <color name="colorPrimaryText">#212121</color>
     <color name="colorSecondText">#757575</color>
     <color name="colorDivider">#BDBDBD</color>
@@ -13,4 +14,7 @@
     <color name="white">#FFFFFF</color>
 
     <color name="common_blue_0090FF">#0090FF</color>
+
+    <color name="sms_et_color_background">#f2f2f2</color>
+    <color name="sms_et_background_stroke">#d6d5d5</color>
 </resources>

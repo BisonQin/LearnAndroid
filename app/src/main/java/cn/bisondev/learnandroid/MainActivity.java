@@ -11,6 +11,8 @@ import cn.bisondev.learnandroid.learnactivity.ActListActivity;
 import cn.bisondev.learnandroid.learnactivity.TestList;
 import cn.bisondev.learnandroid.learncontrol.ControlActivity;
 import cn.bisondev.learnandroid.learnlayout.LayoutActivity;
+import cn.bisondev.learnandroid.learnnetwork.NetworkActivity;
+import cn.bisondev.learnandroid.learnsystem.SystemActivity;
 import cn.bisondev.learnandroid.leranhardware.HardActivity;
 import cn.bisondev.learnandroid.utils.LogUtils;
 
@@ -20,37 +22,37 @@ public class MainActivity extends BaseRecyclerViewActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        Log.e(TAG, LogUtils.logThis());
+        Log.d(TAG, LogUtils.logThis());
         super.onCreate(savedInstanceState);
     }
 
     @Override
     protected void onStart() {
-        Log.e(TAG, LogUtils.logThis());
+        Log.d(TAG, LogUtils.logThis());
         super.onStart();
     }
 
     @Override
     protected void onResume() {
-        Log.e(TAG, LogUtils.logThis());
+        Log.d(TAG, LogUtils.logThis());
         super.onResume();
     }
 
     @Override
     protected void onPause() {
-        Log.e(TAG, LogUtils.logThis());
+        Log.d(TAG, LogUtils.logThis());
         super.onPause();
     }
 
     @Override
     protected void onStop() {
-        Log.e(TAG, LogUtils.logThis());
+        Log.d(TAG, LogUtils.logThis());
         super.onStop();
     }
 
     @Override
     protected void onRestart() {
-        Log.e(TAG, LogUtils.logThis());
+        Log.d(TAG, LogUtils.logThis());
         super.onRestart();
     }
 
@@ -65,23 +67,29 @@ public class MainActivity extends BaseRecyclerViewActivity {
         mAdapter.setItemClickListner(new BaseRecyclerViewAdapter.OnItemClickListner() {
             @Override
             public void onItemClickListner(View v, int position) {
-                Intent intent = null;
+                Class<?> clazz = null;
                 switch (position) {
                     case Config.LAYOUT:
-                        intent = new Intent(MainActivity.this, LayoutActivity.class);
+                        clazz = LayoutActivity.class;
                         break;
                     case Config.ACTIVITY:
-                        intent = new Intent(MainActivity.this, ActListActivity.class);
+                        clazz = ActListActivity.class;
                         break;
                     case Config.HARDWARE:
-                        intent = new Intent(MainActivity.this, HardActivity.class);
+                        clazz = HardActivity.class;
                         break;
                     case Config.CONTROL:
-                        intent = new Intent(MainActivity.this, ControlActivity.class);
+                        clazz = ControlActivity.class;
+                        break;
+                    case Config.SYSTEM_SERVICE:
+                        clazz = SystemActivity.class;
+                        break;
+                    case Config.NETWORK:
+                        clazz = NetworkActivity.class;
                         break;
                 }
-                if(null != intent) {
-                    startActivity(intent);
+                if(null != clazz) {
+                    startActivity(new Intent(MainActivity.this, clazz));
                 }
             }
         });
