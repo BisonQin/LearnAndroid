@@ -44,7 +44,7 @@ public class SystemActivity extends BaseRecyclerViewActivity {
     }
 
     @Override
-    protected int provideItemArratId() {
+    protected int provideItemArrayId() {
         return R.array.system_service;
     }
 

@@ -4,7 +4,7 @@
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.SEND_SMS" />
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:name=".MyApplication"
@@ -42,7 +42,6 @@
         <activity android:name=".leranhardware.HardActivity" />
         <activity android:name=".learncontrol.ControlActivity" />
         <activity android:name=".learncontrol.securitycode.SecurityCodeActivity" />
-        <activity android:name=".learnretrofit.RetrofitActivity" />
         <activity android:name=".learnactivity.TestList" />
         <activity android:name=".learnactivity.ActListActivity" />
         <activity android:name=".learnactivity.TestLauncher" />
@@ -55,7 +54,14 @@
             android:name=".learnsystem.sms.SMSActivity"
             android:windowSoftInputMode="adjustResize" />
         <activity android:name=".learnnetwork.NetworkActivity" />
-        <activity android:name=".learnnetwork.jsoup.TestJsoupActivity"></activity>
+        <activity android:name=".learnnetwork.jsoup.TestJsoupActivity" />
+        <activity android:name=".learncontrol.customize.CustomizeActivity" />
+        <activity android:name=".learncontrol.list.ListViewActivity" />
+        <activity android:name=".learncontrol.list.ScrollHideListView" />
+        <activity android:name=".learncontrol.list.ChatActivity" />
+        <activity android:name=".learncontrol.list.FocusListViewTest" />
+        <activity android:name=".learncontrol.scroll.DragViewTest" />
+        <activity android:name=".learncontrol.scroll.DragViewGroupTest"></activity>
     </application>
 
 </manifest>

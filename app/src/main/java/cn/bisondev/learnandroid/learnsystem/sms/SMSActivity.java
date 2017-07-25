@@ -19,6 +19,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
 
+import cn.bisondev.learnandroid.BuildConfig;
 import cn.bisondev.learnandroid.R;
 import cn.bisondev.learnandroid.base.BaseActivity;
 import cn.bisondev.learnandroid.utils.SnackbarUtil;

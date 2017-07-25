@@ -62,7 +62,7 @@ public class HardActivity extends BaseRecyclerViewActivity {
     }
 
     @Override
-    protected int provideItemArratId() {
+    protected int provideItemArrayId() {
         return R.array.hardware;
     }
 }

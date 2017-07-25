@@ -47,7 +47,7 @@ public class LayoutActivity extends BaseRecyclerViewActivity {
             public void onItemClickListner(View v, int position) {
                 Intent intent = null;
                 switch (position) {
-                    case Config.CONSTRAINTACTIVITY:
+                    case Config.CONSTRAINT_ACTIVITY:
                         intent = new Intent(LayoutActivity.this, ConstraintActivity.class);
                         break;
                 }
@@ -69,7 +69,7 @@ public class LayoutActivity extends BaseRecyclerViewActivity {
     }
 
     @Override
-    protected int provideItemArratId() {
+    protected int provideItemArrayId() {
         return R.array.layout;
     }
 }

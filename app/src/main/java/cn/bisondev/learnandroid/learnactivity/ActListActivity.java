@@ -44,16 +44,16 @@ public class ActListActivity extends BaseRecyclerViewActivity {
             public void onItemClickListner(View v, int position) {
                 Intent intent = null;
                 switch (position) {
-                    case Config.LISTACTIVITY:
+                    case Config.LIST_ACTIVITY:
                         intent = new Intent(ActListActivity.this, TestList.class);
                         break;
-                    case Config.LAUNCHERACTIVITY:
+                    case Config.LAUNCHER_ACTIVITY:
                         intent = new Intent(ActListActivity.this, TestLauncher.class);
                         break;
-                    case Config.EXPANDABLELISTACTIVITY:
+                    case Config.EXPANDABLE_LIST_ACTIVITY:
                         intent = new Intent(ActListActivity.this, ExpandableListActivityTest.class);
                         break;
-                    case Config.PREFERENCEACTICITY:
+                    case Config.PREFERENCE_ACTIVITY:
                         intent = new Intent(ActListActivity.this, PreferenceActivityTest.class);
                         break;
                 }
@@ -75,7 +75,7 @@ public class ActListActivity extends BaseRecyclerViewActivity {
     }
 
     @Override
-    protected int provideItemArratId() {
+    protected int provideItemArrayId() {
         return R.array.activity;
     }
 }

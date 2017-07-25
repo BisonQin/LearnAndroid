@@ -65,7 +65,7 @@ public abstract class BaseRecyclerViewActivity extends AppCompatActivity {
     public void initRecyclerView() {
         recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
 
-        List list = Arrays.asList(getResources().getStringArray(provideItemArratId()));
+        List list = Arrays.asList(getResources().getStringArray(provideItemArrayId()));
         data = new ArrayList<>(list);
 
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
@@ -161,5 +161,5 @@ public abstract class BaseRecyclerViewActivity extends AppCompatActivity {
     abstract protected  void setItemOnClickListener();
 
     abstract protected int provideContentViewId();          //用于引入布局文件
-    abstract protected int provideItemArratId();            //引入RecyclerView的数组资源
+    abstract protected int provideItemArrayId();            //引入RecyclerView的数组资源
 }

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.bisondev.learnandroid.learncontrol.list.ListViewActivity">
+
+    <!-- 分割线为灰色 -->
+    <!--<ListView-->
+        <!--android:id="@+id/list_view"-->
+        <!--android:divider="@android:color/darker_gray"-->
+        <!--android:dividerHeight="5dp"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+    <!--</ListView>-->
+
+    <!-- 分隔线变透明 -->
+    <!--<ListView-->
+        <!--android:id="@+id/list_view"-->
+        <!--android:divider="@null"-->
+        <!--android:dividerHeight="5dp"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+    <!--</ListView>-->
+
+    <!-- 分隔线变透明，隐藏滚动条 -->
+    <!--<ListView-->
+        <!--android:id="@+id/list_view"-->
+        <!--android:divider="@null"-->
+        <!--android:dividerHeight="5dp"-->
+        <!--android:scrollbars="none"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+    <!--</ListView>-->
+
+    <!-- 分隔线变透明，隐藏滚动条，取消Item点击效果 -->
+    <!-- 也可用安卓自带的透明色来实现此取消点击效果@android:color/transparent -->
+    <!--<ListView-->
+        <!--android:id="@+id/list_view"-->
+
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+    <!--</ListView>-->
+    <cn.bisondev.learnandroid.learncontrol.list.FlexibleListView
+        android:id="@+id/flexible_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </cn.bisondev.learnandroid.learncontrol.list.FlexibleListView>
+</LinearLayout>

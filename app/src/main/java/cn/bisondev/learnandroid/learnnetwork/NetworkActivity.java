@@ -42,7 +42,7 @@ public class NetworkActivity extends BaseRecyclerViewActivity {
     }
 
     @Override
-    protected int provideItemArratId() {
+    protected int provideItemArrayId() {
         return R.array.network;
     }
 

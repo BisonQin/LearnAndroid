@@ -27,6 +27,13 @@
 
     <array name="uicontrol">
         <item>方框验证码</item>
+        <item>自定义TextView</item>
+        <item>改良版弹性ListView</item>
+        <item>自动显示、隐藏的ListView</item>
+        <item>聊天ListView</item>
+        <item>动态改变ListView布局</item>
+        <item>Scroll</item>
+        <item>DragVIewHelper</item>
     </array>
 
     <array name="system_service">

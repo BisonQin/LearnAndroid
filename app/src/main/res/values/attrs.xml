@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 自定义的顶部Toolbar -->
+    <declare-styleable name="TopBar">
+        <!-- 标题 -->
+        <attr name="title" format="string"/>
+        <!-- 标题大小 -->
+        <attr name="titleTextSize" format="dimension"/>
+        <!-- 标题颜色 -->
+        <attr name="titleTextColor" format="color"/>
+        <!-- 左边文字颜色 -->
+        <attr name="leftTextColor" format="color"/>
+        <!-- 左边背景资源 -->
+        <attr name="leftBackground" format="reference|color"/>
+        <!-- 左边文字 -->
+        <attr name="leftText" format="string"/>
+        <!-- 右边文字颜色 -->
+        <attr name="rightTextColor" format="color"/>
+        <!-- 右边背景资源 -->
+        <attr name="rightBackground" format="reference|color"/>
+        <!-- 左边文字 -->
+        <attr name="rightText" format="string"/>
+    </declare-styleable>
+</resources>

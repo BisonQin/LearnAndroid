@@ -69,22 +69,22 @@ public class MainActivity extends BaseRecyclerViewActivity {
             public void onItemClickListner(View v, int position) {
                 Class<?> clazz = null;
                 switch (position) {
-                    case Config.LAYOUT:
+                    case Config.LAYOUT:         //布局
                         clazz = LayoutActivity.class;
                         break;
-                    case Config.ACTIVITY:
+                    case Config.ACTIVITY:       //Activity
                         clazz = ActListActivity.class;
                         break;
-                    case Config.HARDWARE:
+                    case Config.HARDWARE:       //硬件
                         clazz = HardActivity.class;
                         break;
-                    case Config.CONTROL:
+                    case Config.CONTROL:        //UI控件
                         clazz = ControlActivity.class;
                         break;
-                    case Config.SYSTEM_SERVICE:
+                    case Config.SYSTEM_SERVICE: //系统服务
                         clazz = SystemActivity.class;
                         break;
-                    case Config.NETWORK:
+                    case Config.NETWORK:        //网络
                         clazz = NetworkActivity.class;
                         break;
                 }
@@ -101,7 +101,7 @@ public class MainActivity extends BaseRecyclerViewActivity {
     }
 
     @Override
-    protected int provideItemArratId() {
+    protected int provideItemArrayId() {
         return R.array.home;
     }
 }
